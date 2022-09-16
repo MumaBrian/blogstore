@@ -69,7 +69,7 @@ ROOT_URLCONF = "django_project.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "templates"],  # new
+        "DIRS": [BASE_DIR / "templates"],  
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -185,3 +185,6 @@ EMAIL_HOST_PASSWORD = 'djangopro?'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 # EMAIL_USE_SSL = False
+
+MEDIA_URL = "/media/" 
+MEDIA_ROOT = BASE_DIR / "media"
